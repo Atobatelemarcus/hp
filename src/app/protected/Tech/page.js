@@ -49,7 +49,7 @@ export default function FeedPage({ tech = "Tech" }) {
           <hr className="bg-purple-600" />
           <div className="flex justify-between items-center gap-2">
             <div className="p-3">
-              <h2 className="text-lg font-semibold">{post.title}</h2>
+              <h2 className="md:text-lg text-sm font-semibold">{post.title}</h2>
               <p className="text-sm text-gray-500">
                 {post.content.slice(0, 100)}...
               </p>
@@ -71,4 +71,5 @@ export default function FeedPage({ tech = "Tech" }) {
     </div>
   );
 }
+
 
