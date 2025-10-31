@@ -53,16 +53,17 @@ export default function Navbar() {
             Home
           </Link>
           <Link href="/protected/Tech" className="py-2 w-full text-gray-700" onClick={() => setOpen(false)}>
-            Stories
+          Tech
           </Link>
           <Link href="/protected/Life" className="py-2 w-full text-gray-700" onClick={() => setOpen(false)}>
-            About
+            Life
           </Link>
-          <Link href="/protected/" className="py-2 w-full text-gray-700" onClick={() => setOpen(false)}>
-            Contact
+          <Link href="/protected/Hardtalk" className="py-2 w-full text-gray-700" onClick={() => setOpen(false)}>
+            Hardtalk
           </Link>
         </div>
       )}
     </nav>
   );
 }
+
