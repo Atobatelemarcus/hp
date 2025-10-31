@@ -42,6 +42,7 @@ export default function ProfilePage() {
                   ? new Date(user.createdAt).toLocaleDateString()
                   : "Unknown"}
               </span>
+                 <span className="font-medium text-green-600">{user.isOnline}</span>
             </div>
           </div>
 
@@ -57,4 +58,5 @@ export default function ProfilePage() {
     </div>
   );
 }
+
 
