@@ -20,13 +20,7 @@ export default function ProfilePage() {
       <div className="max-w-md w-full bg-white shadow-lg rounded-2xl overflow-hidden border border-purple-200">
         <div className="bg-gradient-to-r from-purple-600 to-purple-400 h-32 w-full relative">
           <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2">
-            <Image
-              src={user.image || "/default-avatar.png"}
-              alt="User Avatar"
-              width={96}
-              height={96}
-              className="rounded-full border-4 border-white shadow-md object-cover w-24 h-24"
-            />
+           
           </div>
         </div>
 
@@ -63,3 +57,4 @@ export default function ProfilePage() {
     </div>
   );
 }
+
