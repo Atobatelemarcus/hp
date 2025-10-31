@@ -44,6 +44,7 @@ export async function POST(req) {
         name: user.name,
         email: user.email,
         role: user.role,
+        isOnline:user.isOnline,
       },
       token,
     });
@@ -52,4 +53,5 @@ export async function POST(req) {
     return NextResponse.json({ error: "Server error" }, { status: 500 });
   }
 }
+
 
