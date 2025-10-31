@@ -60,8 +60,8 @@ export default function FeedPage({ feed = "Feed" }) {
            <Image  src={post.image || "/default-image.jpg"}
            alt={post.title}
           width={100}
-           height={100}
-          className="w-[100px] h-[100px] object-cover rounded-lg border border-slate-300 shadow-sm"/>
+           height={50}
+          className="w-[100px] h-[50px] object-cover rounded-lg border border-slate-300 shadow-sm"/>
           </div>
         </Link>
       ))}
@@ -69,3 +69,4 @@ export default function FeedPage({ feed = "Feed" }) {
     </div>
   );
 }
+
