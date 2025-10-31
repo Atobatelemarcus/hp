@@ -184,7 +184,7 @@ const handleCommentReaction = async (commentId, type) => {
               />
               <button
                 onClick={handleAddComment}
-                className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+                className="bg-blue-600 text-white px-2 py-2 rounded hover:bg-blue-700"
               >
                 Post
               </button>
@@ -195,3 +195,4 @@ const handleCommentReaction = async (commentId, type) => {
     </div>
   );
 }
+
