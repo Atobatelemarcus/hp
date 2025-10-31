@@ -78,7 +78,7 @@ export default function CommentThread({
                     setReplyText((prev) => ({ ...prev, [commentId]: e.target.value }))
                   }
                   placeholder="Write a reply..."
-                  className="flex-1 border rounded p-2"
+                  className="flex-1 border rounded px-3 py-1.5"
                 />
                 <button
                   onClick={() => {
@@ -101,5 +101,6 @@ export default function CommentThread({
     </div>
   );
 }
+
 
 
