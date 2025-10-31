@@ -136,7 +136,7 @@ const handleSubmit = async (e) => {
         </div>
 
         {/* Google Login */}
-        <div className="items-center justify-center">
+        <div className="items-center justify-center w-full">
            <GoogleLogin
           onSuccess={handleGoogleSuccess}
           onError={handleGoogleError}
@@ -170,4 +170,5 @@ const handleSubmit = async (e) => {
     </div>
   );
 }
+
 
