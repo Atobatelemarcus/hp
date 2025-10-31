@@ -61,7 +61,7 @@ export default function FeedPage({ hardtalk = "Hardtalk" }) {
               src={post.image || "/default-image.jpg"}
               alt={post.title}
               width={100}
-              height={100}
+              height={50}
               className="border border-slate-400 m-4 rounded-lg object-cover"
             />
           </div>
@@ -71,3 +71,4 @@ export default function FeedPage({ hardtalk = "Hardtalk" }) {
     </div>
   );
 }
+
