@@ -70,7 +70,7 @@ export default function CommentThread({
 
             {/* Add Reply Box */}
             {showReplyBox[commentId] && (
-              <div className="ml-6 mt-3 flex items-center gap-2">
+              <div className="ml-4 mt-3 flex items-center gap-2">
                 <input
                   type="text"
                   value={replyText[commentId] || ""}
@@ -101,3 +101,4 @@ export default function CommentThread({
     </div>
   );
 }
+
