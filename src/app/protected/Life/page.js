@@ -47,7 +47,7 @@ export default function FeedPage({ life = "Life" }) {
           className="rounded-xl overflow-hidden hover:shadow-lg transition"
         >
           <hr className="bg-purple-600" />
-          <div className="flex justify-between">
+          <div className="flex justify-between items-center space-x-2">
             <div className="p-3">
               <h2 className="text-lg font-semibold">{post.title}</h2>
               <p className="text-sm text-gray-500">
@@ -60,9 +60,9 @@ export default function FeedPage({ life = "Life" }) {
             <Image
               src={post.image || "/default-image.jpg"}
               alt={post.title}
-              width={100}
-              height={100}
-              className="border border-slate-400 mx-4 rounded-lg object-cover w"
+              width={150}
+              height={70}
+              className="border border-slate-400 mx-4 rounded-lg object-cover "
             />
           </div>
         </Link>
@@ -71,3 +71,4 @@ export default function FeedPage({ life = "Life" }) {
     </div>
   );
 }
+
