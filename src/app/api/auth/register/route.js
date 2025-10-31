@@ -26,7 +26,7 @@ export async function POST(req) {
       email,
       password,
       role:  "user",
-      online: false,
+      isOnline: false,
     });
 
     // ✅ Now create JWT after saving user
@@ -52,3 +52,4 @@ export async function POST(req) {
     return NextResponse.json({ error: "Server error" }, { status: 500 });
   }
 }
+
