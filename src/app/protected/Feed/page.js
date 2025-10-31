@@ -47,7 +47,7 @@ export default function FeedPage({ feed = "Feed" }) {
           className="rounded-xl overflow-hidden hover:shadow-lg transition"
         >
           <hr className="bg-purple-600" />
-          <div className="flex justify-between items-center space-x-2">
+          <div className="flex justify-between items-center gap-2">
             <div className="p-2">
               <h2 className="text-lg font-semibold">{post.title}</h2>
               <p className="text-sm text-gray-500">
@@ -61,7 +61,7 @@ export default function FeedPage({ feed = "Feed" }) {
            alt={post.title}
           width={100}
            height={50}
-          className="w-[100px] h-[50px] object-cover p-2 rounded-lg border border-slate-300 shadow-sm"/>
+          className="object-cover p-2 m-2 rounded-lg border border-slate-300 shadow-sm"/>
           </div>
         </Link>
       ))}
@@ -69,5 +69,6 @@ export default function FeedPage({ feed = "Feed" }) {
     </div>
   );
 }
+
 
 
