@@ -38,14 +38,12 @@ export default function ProfilePage() {
             <div className="flex justify-between text-sm border-b py-2">
               <span className="font-medium text-gray-600">Joined</span>
               <span className="text-gray-800">
-                {user.createdAt
-                  ? new Date(user.createdAt).toLocaleDateString()
-                  : "Unknown"}
+                {user.createdAt}
               </span>
-                 <span className="font-medium text-green-600">{user.isOnline}</span>
+          
             </div>
           </div>
-
+                   <span className="font-medium text-green-600">{user.isOnline}</span>
           <button
             onClick={logout}
             className="mt-6 flex items-center justify-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg transition duration-200 w-full"
@@ -58,5 +56,6 @@ export default function ProfilePage() {
     </div>
   );
 }
+
 
 
