@@ -47,7 +47,7 @@ export default function FeedPage({ life = "Life" }) {
           className="rounded-xl overflow-hidden hover:shadow-lg transition"
         >
           <hr className="bg-purple-600" />
-          <div className="flex justify-between items-center space-x-2">
+          <div className="flex justify-between items-center gap-2">
             <div className="p-3">
               <h2 className="md:text-lg text-sm font-semibold">{post.title}</h2>
               <p className="text-sm text-gray-500">
@@ -71,5 +71,6 @@ export default function FeedPage({ life = "Life" }) {
     </div>
   );
 }
+
 
 
