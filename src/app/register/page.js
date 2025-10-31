@@ -136,7 +136,8 @@ const handleSubmit = async (e) => {
         </div>
 
         {/* Google Login */}
-        <GoogleLogin
+        <div className="items-center justify-center">
+           <GoogleLogin
           onSuccess={handleGoogleSuccess}
           onError={handleGoogleError}
           text="continue_with"
@@ -144,6 +145,9 @@ const handleSubmit = async (e) => {
           shape="pill"
           width="100%"
         />
+          
+          </div>
+       
 
         <p className="text-sm text-gray-500 mt-4">
           {isRegister ? "Already have an account?" : "Don't have an account?"}{" "}
@@ -156,13 +160,14 @@ const handleSubmit = async (e) => {
         </p>
 
         {message && (
-          <p className="text-sm text-red-500 font-medium mt-2">{message}</p>
+          <p className="text-sm text-green-500 font-medium mt-2">{message}</p>
         )}
        
         <Link href="/auth/forgot-password">
-           <p className="text-purple-500 text-center">Forgot password?</p>
+           <p className="text-purple-500 text-center text-sm">Forgot password?</p>
         </Link>
       </div>
     </div>
   );
 }
+
