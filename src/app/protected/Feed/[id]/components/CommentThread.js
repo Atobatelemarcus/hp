@@ -70,7 +70,7 @@ export default function CommentThread({
 
             {/* Add Reply Box */}
             {showReplyBox[commentId] && (
-              <div className="ml-4 mt-3 flex items-center gap-2">
+              <div className="m-4 mt-3 flex items-center gap-2">
                 <input
                   type="text"
                   value={replyText[commentId] || ""}
@@ -89,7 +89,7 @@ export default function CommentThread({
                       setShowReplyBox((prev) => ({ ...prev, [commentId]: false }));
                     }
                   }}
-                  className="bg-blue-600 text-white px-3 py-1 rounded"
+                  className="bg-blue-600 text-white p-2 rounded"
                 >
                   Reply
                 </button>
@@ -101,4 +101,5 @@ export default function CommentThread({
     </div>
   );
 }
+
 
